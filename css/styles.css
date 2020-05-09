@@ -83,9 +83,12 @@ body {
     align-items: baseline;
 }
 
-.navigation__logo {
+.navigation__title {
     padding-top: 42px;
     padding-bottom: 102px;
+}
+
+.navigation__logo {
     font-size: 1.625rem;
     font-family: "Dancing Script", serif;
     color: var(--logo-color);
@@ -136,7 +139,6 @@ body {
 }
 
 .services__card {
-    position: relative;
     width: 290px;
 }
 
@@ -165,10 +167,10 @@ body {
 }
 
 .services__card-title::before {
-    position: absolute;
-    left: 50%;
-    top: -98px;
-    transform: translateX(-50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 26px;
     width: 72px;
     height: 72px;
     border: 3px solid var(--card-icon-color);
@@ -248,9 +250,9 @@ body {
     border: 1px solid var(--input-border-color);
     border-radius: 2px;
     background-color: var(--input-color);
-    font-family: "Times New Roman", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding-left: 20px;
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 .contact-us__form-input::placeholder {
